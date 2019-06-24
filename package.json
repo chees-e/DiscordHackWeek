@@ -1,0 +1,34 @@
+{
+  "name": "PineapplBot",
+  "description": "A Discord bot made by Pineappl#5374 for Discord Hack Week",
+  "script": {
+    "start": "node index.js"
+  }
+  "dependencies": {
+    "color-convert": "^1.9.3",
+    "dictionary-en-ca": "^2.1.1",
+    "discord.js": "^11.5.1",
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "ffmpeg": "0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "gm": "^1.23.1",
+    "google-images": "^2.1.0",
+    "image-size": "^0.7.4",
+    "mathjs": "^5.10.3",
+    "mathmode": "0.0.4",
+    "node-opus": "^0.3.2",
+    "request": "^2.88.0",
+    "yandex-translate": "^2.1.3",
+    "youtube-dl": "^2.0.0",
+    "youtube-search": "^1.1.4",
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/DiscordHackWeek"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "hackweek"
+  ]
+  
