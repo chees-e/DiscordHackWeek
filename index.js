@@ -3,7 +3,7 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-let prefixes = require('./prefix.json');
+let prefixes = require('./data/prefix.json');
 let prefix = 'p=';
 
 
