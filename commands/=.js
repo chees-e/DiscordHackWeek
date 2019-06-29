@@ -124,7 +124,7 @@ module.exports.run = async(bot, message, args, prefix)=>{
     }
   }
 
-module.exports.help {
+module.exports.help = {
   name: "=",
   description: `:1234: | **= Help** 
     = is a command that evalutes an expression using mathjs.
