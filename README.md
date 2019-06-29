@@ -1,6 +1,5 @@
 # DiscordHackWeek
 
-I just started writing it so it's not done at all
-Right now I have the baisc sctructures and command ideas
+This is a Discord bot made for Discord hack week. By Pineappl#5374.
 
-A Discord bot made for Discord hack week. By Pineappl#5374
+
