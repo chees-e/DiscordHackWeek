@@ -7,11 +7,11 @@ Written in JS, supported by Discord.js.
 
 1. Install the packages:
 
-...Use `npm install`
+  Use `npm install`
 
 2. Create a discord client
 
-...follow this [link](https://discordapp.com/developers/applications/)
+  follow this [link](https://discordapp.com/developers/applications/)
 
 3. Get the tokens for
 
