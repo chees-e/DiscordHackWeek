@@ -64,6 +64,7 @@ module.exports.run = async(bot, message, args, prefix)=>{
         if(mathjs.eval(args)){
           lastAnswer[message.channel.id] = mathjs.eval(args)
         }
+        return message.channel.send(`= ${mathjs.eval(args)}`)
       } else {
         args = args.split(',')
         return  message.channel.send(`= ${mathjs.eval(args)}`)
