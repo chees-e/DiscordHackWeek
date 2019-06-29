@@ -11,7 +11,7 @@ module.exports.run = async(bot, message, args, prefix)=>{
       .addField('The channel id is:', `${message.channel.id}`);
   } else {
     embed
-      .setTitle(`${user.user.username}'s id is: user.id`);
+      .setTitle(`${user.user.username}'s id is: ${user.id}`);
   }
   return message.channel.send(embed);
 }
