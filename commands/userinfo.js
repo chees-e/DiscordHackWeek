@@ -1,3 +1,5 @@
+const Discord = require('discord.js');
+
 module.exports.run = async(bot, message, args, prefix)=>{
   function getUser(message, args){
     let user = message.guild.member(message.mentions.users.first());    
