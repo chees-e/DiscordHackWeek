@@ -1,29 +1,29 @@
 module.exports.run = async(bot, message, args, prefix)=>{
   function getUser(message, args){
     let user = message.guild.member(message.mentions.users.first());    
-	  if(!args) return message.channel.send(':x:please specify an user');
-	  if(!user){
-		  user = message.guild.members.filter(function(m){
-			  if(m.nickname){
-				  if(m.nickname.toLowerCase().includes(args)){
-					  return true;
-				  }
-			  }
-			  if(m.user.username.toLowerCase().includes(args)){
-				  return true;
-			  }
-		  }).first();
-		  if(!user){
-			  user = message.guild.members.filter(function(m){
-				  if(m.nickname){
-					  return encloses(m.nickname.toLowerCase(), args);
-			  	}
-				  return encloses(m.user.username.toLowerCase(), args);
-			  }).first();
-			  if(!user) throw "User doesn't exist";
-		  } 
-	  } 
-	  return user;
+			if(!args) return message.channel.send(':x:please specify an user');
+			if(!user){
+				user = message.guild.members.filter(function(m){
+					if(m.nickname){
+						if(m.nickname.toLowerCase().includes(args)){
+							return true;
+						}
+					}
+					if(m.user.username.toLowerCase().includes(args)){
+						return true;
+					}
+				}).first();
+				if(!user){
+					user = message.guild.members.filter(function(m){
+						if(m.nickname){
+							return encloses(m.nickname.toLowerCase(), args);
+					}
+						return encloses(m.user.username.toLowerCase(), args);
+					}).first();
+					if(!user) throw "User doesn't exist";
+				} 
+			} 
+			return user;
   }
     
   try{
