@@ -8,7 +8,7 @@ module.exports.run = async(bot, message, args, prefix)=>{
     if(morse[args[i]]){
       encoded.push(morse[args[i]]);
     } else {
-      encoded.push(' ');
+      encoded.push('/');
     }
   }
   return message.channel.send(`encoded: ${encoded.join(' ')}`);
