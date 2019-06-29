@@ -59,6 +59,8 @@ module.exports.help = {
     Gets a color
 
     **Usage**: \${prefix}color <color>
+
+    If no color is specified the default will be a random color
     
     **Option**:
     Hex code: \`#000000\`
