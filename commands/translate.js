@@ -55,5 +55,6 @@ module.exports.help = {
     Example:
     \`\${prefix}translate Hola\`
     \`\${prefix}translate es| Hello\`
+`
 }
 
