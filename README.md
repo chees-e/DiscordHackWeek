@@ -31,20 +31,20 @@ With YOURCLENTID replaced by your bot's id
 
 ## Functions/Commands:
 
-`=`: Evaluates an expression
-`color`: Gets a color
-`download`: Downloads a song/video from youtube
-`encode`: Encode a message to morse
-`help`: The help command
-`id`: Gets your/someone's id
-`latex`: Prints an expression in latex (returns an image)
-`link`: Get the invitation link
-`market`: Checks status for stocks/indices/foreign exhanges via WorldTradingData
-`random`: Random simulations like dice/cards...
-`search`: Search for images/videos/others via DuckDuckGo API/Google Custom Search Engine/Youtube Search
-`setprefix`: Change the prefix for this bot
-`translate`: Translate a message
-`userinfo`: Get a user's information
+* `=`: Evaluates an expression
+* `color`: Gets a color
+* `download`: Downloads a song/video from youtube
+* `encode`: Encode a message to morse
+* `help`: The help command
+* `id`: Gets your/someone's id
+* `latex`: Prints an expression in latex (returns an image)
+* `link`: Get the invitation link
+* `market`: Checks status for stocks/indices/foreign exhanges via WorldTradingData
+* `random`: Random simulations like dice/cards...
+* `search`: Search for images/videos/others via DuckDuckGo API/Google Custom Search Engine/Youtube Search
+* `setprefix`: Change the prefix for this bot
+* `translate`: Translate a message
+* `userinfo`: Get a user's information
 
 ## Things to know:
 
