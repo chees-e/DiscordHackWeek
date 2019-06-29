@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args, prefix) => {
-	if(args && bot.commands.get(args)){
+  if(args && bot.commands.get(args)){
     let description = bot.commands.get(args).help.description
     while(description.includes('${prefix}')){
       description = description.replace('${prefix}',prefix)
