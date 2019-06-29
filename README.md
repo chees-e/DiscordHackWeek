@@ -11,21 +11,21 @@ Use `npm install`
 
 2. Create a discord client
 
-follow this link https://discordapp.com/developers/applications/
+follow this [link](https://discordapp.com/developers/applications/)
 
 3. Get the tokens for
 
-⋅⋅* Discord client: See Application => Bot => Token
-⋅⋅* YTapi token: https://console.developers.google.com/apis/credentials
-⋅⋅* World Trading Data token: https://www.worldtradingdata.com/
-⋅⋅* Custom search engine id: https://developers.google.com/custom-search/
-⋅⋅* Yandex translate token: https://tech.yandex.com/translate/
+* Discord client: See Application => Bot => Token
+* YTapi token: [link](https://console.developers.google.com/apis/credentials)
+* World Trading Data token: [link]https://www.worldtradingdata.com/)
+* Custom search engine id: [link]https://developers.google.com/custom-search/)
+* Yandex translate token: [link]https://tech.yandex.com/translate/)
 
 4. Create `.env` file and plug those tokens in like the `.env.example`
 
 5. Add the bot to your server:
 
-https://discordapp.com/api/oauth2/authorize?client_id=YOURCLIENTID&scope=bot
+`https://discordapp.com/api/oauth2/authorize?client_id=YOURCLIENTID&scope=bot`
 
 With YOURCLENTID replaced by your bot's id
 
@@ -48,9 +48,9 @@ With YOURCLENTID replaced by your bot's id
 
 ## Things to know:
 
-⋅⋅* The default prefix is `p=`, you can use `p=setprefix [new prefix]` to change it
-⋅⋅* To get help for each command use `p=help [command]`
-⋅⋅* I still have a lot of things I want to add but a week is not a lot of time
+* The default prefix is `p=`, you can use `p=setprefix [new prefix]` to change it
+* To get help for each command use `p=help [command]`
+* I still have a lot of things I want to add but a week is not a lot of time
 
 ## I hope you all enjoy this bot
 
