@@ -19,7 +19,7 @@ module.exports.run = async(bot, message, args, prefix)=>{
 module.exports.help = {
   name: "id",
   description: `:1234: | Id help
-    id is a command to get your/someone's id.
+    id is a command to get your/someone\'s id.
   
   Usage: \${prefix}id [@user]
   `
