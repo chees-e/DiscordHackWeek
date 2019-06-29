@@ -3,7 +3,7 @@
   "description": "A Discord bot made by Pineappl#5374 for Discord Hack Week",
   "script": {
     "start": "node index.js"
-  }
+  },
   "dependencies": {
     "color-convert": "^1.9.3",
     "discord.js": "^11.5.1",
