@@ -12,8 +12,8 @@ module.exports.run = async (bot, message, args, prefix) => {
     .setAuthor(`${bot.user.username} Commands:`)
     .setColor('#36393F')
     .setThumbnail(bot.user.displayAvatarURL)
-    .setDescription('The prefix right now is: ' + prefix)
-    .addField('Commands', '=, color, translate')
+    .setDescription(`The prefix right now is: ${prefix}\n Use \`${prefix}help <command> \` to get info about that command` )
+    .addField('Commands', '=, color, download, encode, id, latex, link, market, random, search, translate, userinfo')
     .setFooter(`${bot.user.username} created by Pineapple#5374 2019`);
     return message.channel.send(embed);
   }
