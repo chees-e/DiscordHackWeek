@@ -58,7 +58,7 @@ bot.on('message', async (message) => {
     prefixes[message.guild.id] = 'p=';
     await jsUpdateFile('./data/prefix.json', prefixes);
   }
-  let cmd = messageArray[0].slice(prefix.length);
+  let cmd = messageArray[0]
   let args = message.content.slice(cmd.length + 1);
   
   if(message.author.bot) return;
