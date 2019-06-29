@@ -11,7 +11,7 @@ module.exports.run = async(bot, message, args, prefix)=>{
     }
     return message.channel.send(`encoded: ${args}`);
   } else {
-    let args = args.toUpperCase();
+    args = args.toUpperCase();
     let encoded = []
     for(let i = 0; i<args.length; i++){
       if(morse[args[i]]){
