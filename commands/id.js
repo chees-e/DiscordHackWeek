@@ -5,7 +5,7 @@ module.exports.run = async(bot, message, args, prefix)=>{
   const embed = new Discord.RichEmbed().setColor('#36393F');
   if(!user){
     embed
-      .setTitle(`${message.author.username})
+      .setTitle(message.author.username)
       .addField('your id is:', `${message.author.id}`)
       .addField('The server id is:', `${message.guild.id}`)
       .addField('The channel id is:', `${message.channel.id}`);
