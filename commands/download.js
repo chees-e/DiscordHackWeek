@@ -1,6 +1,8 @@
 const fs = require('fs');
 const ytdl = require('ytdl-core');
 const ytSearch = require('youtube-search');
+const youtubedl = require('youtube-dl');
+const ffmpeg = require('fluent-ffmpeg');
 
 module.exports.run = async(bot, message, args, prefix)=>{     
   let musicUrl = '';
@@ -28,8 +30,6 @@ module.exports.run = async(bot, message, args, prefix)=>{
     return message.channel.send(":x:Error: video too long");
   } 
 
-  const youtubedl = require('youtube-dl');
-
   let name = ''
   await ytdl.getBasicInfo(musicUrl).then(i=>{name = i['title']})
   if(name.includes(' ')){
@@ -53,7 +53,6 @@ module.exports.run = async(bot, message, args, prefix)=>{
         });
       }));
     } else {
-      const ffmpeg = require('fluent-ffmpeg');
       const audio = youtubedl(musicUrl,
         [],
         { cwd: __dirname });
