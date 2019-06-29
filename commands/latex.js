@@ -1,6 +1,4 @@
-const Discord = require("discord.js");
 const latex = require("mathmode");
-const latexnew = require("latex");
 const fs = require("fs")
 const gm = require('gm').subClass({imageMagick: true});
 const sizeOf = require('image-size');
