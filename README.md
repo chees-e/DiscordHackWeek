@@ -1,4 +1,4 @@
-# DiscordHackWeek
+# PineapplBot
 
 This is a productivity/fun Discord bot made for Discord hack week. By Pineappl#5374.
 Written in JS, supported by Discord.js.
