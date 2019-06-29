@@ -63,7 +63,7 @@ bot.on('message', async (message) => {
   
   if(message.author.bot) return;
   
-  if(cmd.slice(0,prefix.length) === prefix){
+  if(message.content.slice(0,prefix.length) === prefix){
     let commandfile = bot.commands.get(cmd.slice(prefix.length));
     if(commandfile){
       commandfile.run(bot,message,args,prefix);
