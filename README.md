@@ -17,9 +17,9 @@ follow this [link](https://discordapp.com/developers/applications/)
 
 * Discord client: See Application => Bot => Token
 * YTapi token: [link](https://console.developers.google.com/apis/credentials)
-* World Trading Data token: [link]https://www.worldtradingdata.com/)
-* Custom search engine id: [link]https://developers.google.com/custom-search/)
-* Yandex translate token: [link]https://tech.yandex.com/translate/)
+* World Trading Data token: [link](https://www.worldtradingdata.com/)
+* Custom search engine id: [link](https://developers.google.com/custom-search/)
+* Yandex translate token: [link](https://tech.yandex.com/translate/)
 
 4. Create `.env` file and plug those tokens in like the `.env.example`
 
