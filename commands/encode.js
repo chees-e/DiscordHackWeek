@@ -3,7 +3,7 @@ let morse = {"A":".-", "B":"-...", "C":"-.-.", "D":"-..", "E":".", "F":"..-.", "
 
 module.exports.run = async(bot, message, args, prefix)=>{
   if(!args) return message.channel.send(':x:Please include an argument');
-  if(args.split(' ')[0] === parseInt(args.split(' ')[1], 10)){
+  if(args.split(' ')[1] === parseInt(args.split(' ')[1], 10)){
     let args = args.split(' ').shift().join(' ').toLowerCase();
     let shift = parseInt(args.split(' ')[1], 10);
     for(let i = 0; i<args.length; i++){
