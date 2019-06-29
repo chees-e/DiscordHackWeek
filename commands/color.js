@@ -1,4 +1,3 @@
-const Discord = require('discord.js')
 const convert = require('color-convert');
 let gm = require('gm').subClass({imageMagick: true});
 let colors = ['black', 'silver', 'gray', 'white', 'maroon', 'red', 'purple', 'fuchsia', 'green', 'lime', 'olive', 'yellow', 'navy', 'blue', 'teal', 'aqua', 'orange',
@@ -12,7 +11,11 @@ let colors = ['black', 'silver', 'gray', 'white', 'maroon', 'red', 'purple', 'fu
 'magenta', 'mediumaquamarine', 'mediumblue', 'mediumorchid', 'mediumpurple', 'mediumseagreen', 'mediumslateblue', 'mediumspringgreen', 'mediumturquoise', 'mediumvioletred', 'midnightblue', 'mintcream', 'mistyrose', 'moccasin', 
 'navajowhite', 'oldlace', 'olivedrab', 'orangered', 'orchid', 'palegoldenrod', 'palegreen', 'paleturquoise', 'palevioletred', 'papayawhip', 'peachpuff', 'peru', 'pink', 'plum', 'powderblue',
 'rosybrown', 'royalblue', 'saddlebrown', 'salmon', 'sandybrown', 'seagreen', 'seashell', 'sienna', 'skyblue', 'slateblue', 'slategray', 'slategrey', 'snow', 'springgreen', 'steelblue',
-'tan', 'thistle', 'tomato', 'turquoise', 'violet', 'wheat', 'whitesmoke', 'yellowgreen', 'rebeccapurple']
+'tan', 'thistle', 'tomato', 'turquoise', 'violet', 'wheat', 'whitesmoke', 'yellowgreen', 'rebeccapurple'];
+
+function delay(sec) {
+	return new Promise(resolve => setTimeout(resolve, sec));
+}
 
 module.exports.run = async(bot, message, args, prefix)=>{
   if(!args){
@@ -45,11 +48,19 @@ module.exports.run = async(bot, message, args, prefix)=>{
     .write('./assets/color.png', function(err){
       if (err) return console.log(err); 
     });
-    let embed = new Discord.RichEmbed()
-    .setDescription(`**Hex**: ${hex} \n **RGB**: ${convert.hex.rgb(hex)} \n **CSS**: ${convert.hex.keyword(hex)}`)
-    .setColor(hex)
-    .attachFile("./assets/color.png");
-    message.channel.send(embed);
+		await delay(500);
+    message.channel.send({
+      embed: {
+        title:`**Hex**: ${hex} \n**RGB**: ${convert.hex.rgb(hex)} \n**CSS**: ${convert.hex.keyword(hex)}`,
+        thumbnail: {
+          url: 'attachment://color.png'
+        }
+      },
+      files: [{
+        attachment: "./assets/color.png",
+        name: 'color.png'
+     }]
+    });
   }
 }
 
