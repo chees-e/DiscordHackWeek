@@ -53,7 +53,7 @@ module.exports.help = {
     If no text is specified, the default will be the last message sent
 
     Example:
-    \${prefix}translate Hola
-    \${prefix}translate es| Hello
+    \`\${prefix}translate Hola\`
+    \`\${prefix}translate es| Hello\`
 }
 
