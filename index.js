@@ -9,7 +9,7 @@ let prefix = 'p=';
 
 bot.commands = new Discord.Collection();
 
-async function fsUpdateFile(file, data) = {
+async function jsUpdateFile(file, data){
   fs.writeFile(file, JSON.stringify(data), (err) => {
     console.log(err)
   });
