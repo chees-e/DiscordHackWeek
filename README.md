@@ -51,6 +51,9 @@ With YOURCLENTID replaced by your bot's id
 * The default prefix is `p=`, you can use `p=setprefix [new prefix]` to change it
 * To get help for each command use `p=help [command]`
 * I still have a lot of things I want to add but a week is not a lot of time
+* If you want, I made a bot already which you can use to test the commands. Here is the invitation link:
+
+`https://discordapp.com/oauth2/authorize?client_id=592806559135039488&permissions=117760&scope=bot`
 
 ## I hope you all enjoy this bot
 
